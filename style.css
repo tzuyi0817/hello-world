@@ -1,0 +1,76 @@
+/**************************************
+FIXED LAYOUT CSS
+**************************************/
+
+.wrapper {
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+  background-color: #163A59;
+  color: #FF6600;
+  border: 2px solid;
+  box-sizing: border-box;
+  min-height: 100px;
+  min-width: 160px;
+  line-height: 100px;
+  float: left;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  
+  .one, .four, .seven {
+    min-width: 100%;
+  }
+  
+  .two, .three, .five, .six {
+    min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  
+  .wrapper {
+    max-width: 900px;
+  }
+  
+  .one {
+    min-width: 60%;
+  }
+  
+  .two, .five {
+    min-width: 40%;
+  }
+  
+  .three, .four {
+    min-width: 30%;
+  }
+  
+  .six, .seven {
+    min-width: 50%;
+  }
+}
+
+
